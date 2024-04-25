@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --btn: #0079FF;
+    --subtxt: #697C9A;
+    --maintxt: #4B6A9B;
+    --logo: #2B3442;
+    --sectionbg: #FEFEFE;
+    --bodybg: #F6F8FF;
+
+    
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+* {
+    font-family: 'Space Mono';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bodybg);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--logo);
+    background-color: transparent;
+}
+
+header span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--subtxt);
+    margin-right: .5rem;
+    letter-spacing: 2px;
+}
+
+.light {
+    display: none;
+}
+
+.dark:hover,
+.light:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+main {
+    padding: 1rem;
+}
+
+.src-btn:hover {
+    opacity: .5;
+}
+
+.url:hover {
+    text-decoration: underline;
+}
+
+.search {
+    position: relative;
+    height: min-content;
+
+    img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-inline: 1rem;
+        
+    }
+
+    a {
+        position: absolute;
+        transform: translate(-105%,-50%);
+        top: 50%;
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+        padding: 1em;
+        background-color: var(--btn);
+        border-radius: 10px;
+        
+    }
+}
+
+input {
+    width: 100%;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    border: none;
+    font-size: .7em;
+    background-color: var(--sectionbg);
+
+   
+
+}
+
+.error {
+    margin-block: .5em;
+    color: red;
+    position: absolute;
+    bottom: -40px;
+    left: 60px;
+
+}
+
+.dev-data {
+    margin-block: 2rem;
+    padding: 2rem 1rem;
+    background-color: var(--sectionbg);
+    border-radius: 15px;
+}
+
+.main-profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    img {
+        aspect-ratio: 1;
+        height: 100px;
+        margin-right: 2rem;
+        border-radius: 50%;
+    }
+
+    .login {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: var(--logo);
+    }
+
+    .username {
+        color: var(--btn);
+        margin-bottom: .5em;
+    }
+
+    .joined {
+        color: var(--subtxt);
+    }
+}
+
+.bio {
+    color: var(--subtxt);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bodybg);
+    border-radius: 10px;
+
+    div {
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        font-size: .9em;
+        color: var(--subtxt);
+    }
+
+    span {
+        display: inline-block;
+        margin: 0 auto;
+        justify-self: center;
+        font-weight: 700;
+        font-size: 1.3em;
+        color: var(--logo);
+    }
+
+    
+
+}
+
+.etc {
+
+    span,
+    a {
+        color: var(--subtxt);
+    }
+
+    div {
+        display: flex;
+        margin-block: 1rem;
+        align-items: center;
+
+        img {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.icon-mod.icon-mod {
+    font-size: 20px;
+    margin-block: 0;
+    width: min-content;
+    
+    .bx-link {
+        transform: translateX(-20%);
+        color: #4b6a9b;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    :root {
+        font-size: 18px;
+    }
+    .flex {
+        width: 75%;
+        margin-left: 25%;
+    }
+    .etc {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 28%;
+        
+        .mar {
+            margin-right: 3rem;
+        }
+        
+    }
+
+    .dev-data {
+        padding-inline: 3rem;
+        margin-inline: 3rem;
+    }
+
+    .avatar.avatar {
+        margin-right: 3.5rem;
+    }
+
+    .search {
+        padding-inline: 3rem;
+    }
+
+    header {
+        padding-inline: 4rem;
+    }
+}
+
+

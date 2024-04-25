@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Github User Search App</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+       <p class="logo">devfinder</p>
+       <div class="mode-switch">
+        <span class="mode">DARK</span>
+        <img src="img/icon-moon.svg" alt="" class="dark">
+        <img src="img/icon-sun.svg" alt="" class="light">
+       </div>
+    </header>
+    <main>
+        <div class="search">
+            <form action="">
+                <img src="img/icon-search.svg" alt="">
+                <input type="text" id="username" name="username" autocomplete="none" placeholder="Search Github username.." required>
+                <a href="" class="src-btn">Search</a>
+            </form>
+            <p class="error"></p>
+        </div>
+        
+        <div class="dev-data">
+            <div class="main-profile-info">
+                <div>
+                    <img src="img/favicon-32x32.png" alt="" class="avatar">
+                </div>
+                <div class="data">
+                    <p class="login">LoginName</p>
+                    <p class="username">@UserName</p>
+                    <p class="joined">Joined</p>
+                </div>
+            </div>
+            <div class="bio">
+                <p class="bio-text"></p>
+            </div>
+            <div class="flex">
+                <div>
+                    <p>Repos</p>
+                    <span class="repos">-</span>
+                </div>
+                <div>
+                    <p>Followers</p>
+                    <span class="followers">-</span>
+                </div>
+                <div>
+                    <p>Following</p>
+                    <span class="following">-</span>
+                </div>
+            </div>
+            <div class="etc">
+                <div>
+                    <div class="">
+                        <img src="img/icon-location.svg" alt="">
+                        <span class="location mar">-</span>
+                    </div>
+                    <div>
+                        <div class="icon-mod">
+                            <i class='bx bx-link'></i>
+                        </div>
+                        <a class="url">-</a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="img/icon-twitter.svg" alt="">
+                        <span class="twitter mar">-</span>
+                    </div>
+                    <div>
+                        <img src="img/icon-company.svg" alt="">
+                        <span class="company">-</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@octokit/core@latest/dist/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>
