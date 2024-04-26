@@ -4,7 +4,7 @@ $(document).ready(() => {
     $('.src-btn').on('click', (e) => {
         e.preventDefault();
         const octokit = new Octokit({
-            auth: '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'
+            auth: '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'
         });
         const inputValue = $('#username').val();
         octokit.request(`GET /users/${inputValue}`, {
